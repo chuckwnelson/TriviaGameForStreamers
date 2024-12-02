@@ -1,3 +1,5 @@
+*** IN DEVELOPMENT ***
+
 # Trivia Game for Streamers
 
 This is a project to create an interactive trivia game for streamers sharing their screen.
