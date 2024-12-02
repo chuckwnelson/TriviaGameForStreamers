@@ -5,37 +5,45 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import socketEvents from './lib/socketio-client'
 
+import GameState from './lib/gameState'
+
+import PlayerComponent from './components/Player'
+import Questions from './components/Questions'
+import Scoreboard from './components/Scoreboard'
+import GameSettings from './components/GameSettings'
+import JoinGame from './components/JoinGame'
+
+import TriviaData from './assets/exampleTrivia.json'
+
 function App() {
-  const [count, setCount] = useState(0)
+  const gameStateObj = new GameState();
+  const [gameState, setGameState] = useState(gameStateObj)
+  const [players, setPlayers] = useState([{id: 1, socketID: '123'}, {id: 2, socketID: null}])
 
   useEffect(() => {
+    console.log('gameState', gameState)
     const socket = io();
     socketEvents(socket)
   }, [])
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="container">
+      <div className="overlay">
+        <GameSettings />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className="top">
+        <Scoreboard />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <div className="middle">
+        {[TriviaData.questions[0]].map((question, k) => <Questions key={'question' + k} question={question} />)}
+      </div>
+      <div className="bottom">
+        <JoinGame />
+        <div className="players">
+          {players.map((player, i) => <PlayerComponent key={'player' + i} player={player} isMe={player.socketID === '123'} />)}
+        </div>
+      </div>
+    </div>
   )
 }
 

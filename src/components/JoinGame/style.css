@@ -1,0 +1,39 @@
+.join-game {
+    border: 1px solid #000000;
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 100;
+    bottom: 0;
+    border-radius: 15px;
+
+    .header {
+        font-size: 0.9rem;
+    }
+
+    .body {
+        padding: 5px;
+        .qr-code {
+            overflow: hidden;
+            border: 1px solid #FFFFFF;
+            width: 80%;
+            aspect-ratio: 1/1;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}

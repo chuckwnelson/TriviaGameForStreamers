@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "questionText": "What year was New York City officially founded?",
+      "choices": ["1609", "1624", "1789", "1812"],
+      "correctAnswer": "1624"
+    },
+    {
+      "questionText": "What is the tallest building in New York City?",
+      "choices": ["Empire State Building", "One World Trade Center", "Chrysler Building", "30 Hudson Yards"],
+      "correctAnswer": "One World Trade Center"
+    },
+    {
+      "questionText": "Which borough is the largest in terms of land area?",
+      "choices": ["Brooklyn", "Queens", "The Bronx", "Staten Island"],
+      "correctAnswer": "Queens"
+    },
+    {
+      "questionText": "What is the nickname of Times Square?",
+      "choices": ["The Big Apple", "The Crossroads of the World", "The City That Never Sleeps", "Gotham"],
+      "correctAnswer": "The Crossroads of the World"
+    },
+    {
+      "questionText": "Which NYC park is the largest by area?",
+      "choices": ["Central Park", "Prospect Park", "Flushing Meadows–Corona Park", "Pelham Bay Park"],
+      "correctAnswer": "Pelham Bay Park"
+    },
+    {
+      "questionText": "What year did the New York City subway system begin operation?",
+      "choices": ["1863", "1894", "1904", "1920"],
+      "correctAnswer": "1904"
+    },
+    {
+      "questionText": "Which iconic NYC bridge was completed in 1883?",
+      "choices": ["Brooklyn Bridge", "Manhattan Bridge", "Williamsburg Bridge", "Queensboro Bridge"],
+      "correctAnswer": "Brooklyn Bridge"
+    },
+    {
+      "questionText": "Which museum is located on Museum Mile in NYC?",
+      "choices": ["The Metropolitan Museum of Art", "The Guggenheim Museum", "The Museum of Modern Art", "The Whitney Museum"],
+      "correctAnswer": "The Metropolitan Museum of Art"
+    },
+    {
+      "questionText": "What is the name of the famous NYC parade held annually on Thanksgiving?",
+      "choices": ["Macy's Thanksgiving Day Parade", "New York Harvest Parade", "Thanksgiving in the City Parade", "Broadway Parade"],
+      "correctAnswer": "Macy's Thanksgiving Day Parade"
+    },
+    {
+      "questionText": "Which NYC neighborhood is known as the birthplace of hip-hop?",
+      "choices": ["Harlem", "The Bronx", "Brooklyn", "Queens"],
+      "correctAnswer": "The Bronx"
+    }
+  ]
+}

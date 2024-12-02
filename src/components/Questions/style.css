@@ -1,0 +1,16 @@
+.questions {
+    .question-text {
+        font-size: 2rem;
+        padding: 15px 0 0 0;
+        font-weight: bold;
+    }
+
+    .answer {
+        border: 1px solid #ffffff;
+        background-color: rgba(255,255,255, 0.15);
+        padding: 15px;
+        border-radius: 30px;
+        font-weight: bold;
+        margin: 15px 0;
+    }
+}

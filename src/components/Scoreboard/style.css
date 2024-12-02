@@ -1,0 +1,13 @@
+.scoreboard {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 15px;
+
+    & > * {
+        border: 1px solid red;
+    }
+}
