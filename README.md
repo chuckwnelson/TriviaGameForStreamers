@@ -1,50 +1,21 @@
-# React + TypeScript + Vite
+# Trivia Game for Streamers
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a project to create an interactive trivia game for streamers sharing their screen.
 
-Currently, two official plugins are available:
+Live streaming is about bringing your audience in with fun and new interactions. This allows the streamer to open a trivia game to their audience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The audience joins via a QR code or URL, allowing them to use a "second screen" experience. The streamer has a community view that displays the trivia questions and answers, and extra stuff from the audience.
 
-## Expanding the ESLint configuration
+The trivia game is setup that people can join in the middle of a trivia session, leaving nobody out even if they join mid-stream.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The interactions are kept clean, so no need for moderation.
 
-- Configure the top-level `parserOptions` property like this:
+## Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+React + TypeScript + Vite + SocketIO
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Hosted version coming soon.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## About
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+This is an example project from Chuck W Nelson. Pull requests, comments, questions, please message me at linkedin, X, bluesky, insagram at the handle of @chuckwnelson.
