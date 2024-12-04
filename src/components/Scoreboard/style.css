@@ -1,6 +1,6 @@
 .scoreboard {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex: 1;
     justify-content: center;
     align-items: center;
@@ -8,6 +8,23 @@
     gap: 15px;
 
     & > * {
-        border: 1px solid red;
+        /* border: 1px solid red; */
+    }
+
+    .countdown-clock {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .clock-number {
+            text-align: center;
+            flex: 1;
+            border-bottom: 1px solid black;
+        }
+
+        .clock-bar {
+            border-bottom: 5px solid blue;
+            transition: 1s width linear;
+        }
     }
 }

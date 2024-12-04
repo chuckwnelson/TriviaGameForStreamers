@@ -8,4 +8,9 @@ export default (socket: SocketIOClient.Socket) => {
   socket.on("disconnect", () => {
     console.log('Socket.io Disconnected', socket.id); // undefined
   });
+
+  return () => {
+    socket.removeAllListeners('connect');
+    socket.removeAllListeners('disconnect');
+  }
 }

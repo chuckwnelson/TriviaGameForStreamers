@@ -1,0 +1,21 @@
+.debugger {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    border: 1px solid green;
+    width: 200px;
+    background-color: #000000;
+    text-align: left;
+    padding: 15px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}

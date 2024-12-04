@@ -19,16 +19,17 @@
 
     .body {
         padding: 5px;
+
         .qr-code {
             overflow: hidden;
             border: 1px solid #FFFFFF;
             width: 80%;
             aspect-ratio: 1/1;
             margin: 0 auto;
+            border-radius: 15px;
 
-            img {
+            div, svg {
                 width: 100%;
-                margin: 0;
             }
         }
     }
